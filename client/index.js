@@ -1,3 +1,6 @@
+// If you like this demo visit: 
+// https://github.com/zircleUI/zircleUI
+// http://zircle.io
 
 var demo = {angle: 0}
 
@@ -237,7 +240,11 @@ const help = {
 
 const home = {
   template: `<z-view class="main">
-  <span><strong> Web Development </strong></span>
+
+  <span><img src="https://vuejs.org/images/logo.png" width="50%" height="50%" /></span><br>
+  <span><strong> Vue.js </strong></span>
+  <br>
+  <span> Ecosystem </span>
   
   <section slot="extension">
 
@@ -261,7 +268,7 @@ const home = {
 
         <z-spot 
           v-for="(subelement, index) in element.elements"
-          style="background-color: #26aeed; border: none; "
+          style="background-color: #42b983; border: none; "
           :angle="(360 / element.elements.length * index) - sharedState.ang1 * 11"
           :distance="132"
           size="xxs"
