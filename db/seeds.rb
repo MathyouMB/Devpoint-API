@@ -24,6 +24,37 @@ u3 = User.create!(
     password: "123"
 ) 
 
+c1 = Category.create!(
+    name: "HTML",
+    description: "used for making websites ...",
+) 
+
+c2 = Category.create!(
+    name: "CSS",
+    description: "used for making websites ...",
+) 
+
+c3 = Category.create!(
+    name: "JavaScript",
+    description: "used for making websites ...",
+) 
+
+c4 = Category.create!(
+    name: "React",
+    description: "used for making websites ...",
+) 
+
+c5 = Category.create!(
+    name: "Vue",
+    description: "used for making websites ...",
+) 
+
+c6 = Category.create!(
+    name: "Angular",
+    description: "used for making websites ...",
+) 
+
+
 10.times do
     Post.create!(
         name: Faker::Lorem.word,

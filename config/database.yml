@@ -1,0 +1,26 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: 1234
+
+development:
+  <<: *default
+  database: devpointapi_development
+  username: postgres
+  password: 1234
+
+test:
+  <<: *default
+  database: devpointapi_test
+  username: postgres
+  password: 1234
+
+
+production:
+  <<: *default
+  database: devpointapi_production
+  username: postgres
+  password: 1234
