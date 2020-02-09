@@ -1,2 +1,2 @@
 # README
-big yes
+uOttaHack - in developement
