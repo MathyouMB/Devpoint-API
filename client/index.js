@@ -19,7 +19,7 @@ const store = {
       store.state.ang1 = demo1.angle1
     }}),
     ecosystem: [
-      {name: 'Help', icon: 'fa-question', viewName: 'help',elements: [
+      {name: 'Help', icon: 'fab fa-html5', viewName: 'help',elements: [
         {name: 'Forum', url: 'https://forum.vuejs.org/', icon: 'fa-comments'},
         {name: 'Chat', url: 'https://chat.vuejs.org/', icon: 'fa-comments-o'}
         ]},
