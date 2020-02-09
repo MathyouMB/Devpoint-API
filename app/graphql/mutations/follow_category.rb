@@ -7,7 +7,7 @@ module Mutations
         type Boolean
 
         def resolve(user_id:, category_id:) 
-       
+        
             user_of_request = User.find_by(id: user_id)
             category_of_request = Category.find_by(id: category_id)
         
