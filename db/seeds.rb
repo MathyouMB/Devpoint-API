@@ -5,3 +5,44 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+u1 = User.create!(
+    username: "matthew",
+    email: "matt@email.com",
+    password: "123"
+) 
+
+u2 = User.create!(
+    username: "iain",
+    email: "iain@email.com",
+    password: "123"
+) 
+
+u3 = User.create!(
+    username: "tiffany",
+    email: "tif@email.com",
+    password: "123"
+) 
+
+10.times do
+    Post.create!(
+        name: Faker::Lorem.word,
+        description: Faker::Lorem.sentence,
+        url: Faker::Internet.url,
+        posttype: "video",
+        user_id: u1.id,
+    )
+end
+
+
+10.times do
+    Post.create!(
+        name: Faker::Lorem.word,
+        description: Faker::Lorem.sentence,
+        url: Faker::Internet.url,
+        posttype: "article",
+        user_id: u2.id,
+    )
+end
+
+
